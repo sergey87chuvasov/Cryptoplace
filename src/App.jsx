@@ -1,3 +1,4 @@
+import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
 import Coin from './pages/Coin/Coin';
 import Home from './pages/Home/Home';
@@ -11,6 +12,7 @@ const App = () => {
         <Route path='/' element={<Home />} />
         <Route path='/coin/:coinId' element={<Coin />} />
       </Routes>
+      <Footer />
     </div>
   );
 };

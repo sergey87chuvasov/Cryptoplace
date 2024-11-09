@@ -17,8 +17,8 @@ const Navbar = () => {
         setCurrency({ name: 'eur', symbol: '€' });
         break;
       }
-      case 'br': {
-        setCurrency({ name: 'Br', symbol: 'Br' });
+      case 'chf': {
+        setCurrency({ name: 'chf', symbol: '₣' });
         break;
       }
 
@@ -42,7 +42,7 @@ const Navbar = () => {
         <select onChange={currencyHandler}>
           <option value='usd'>USD</option>
           <option value='eur'>EUR</option>
-          <option value='byn'>BYN</option>
+          <option value='chf'>CHF</option>
         </select>
         <button>
           Sign Up <img src={arrow_icon} alt='icon pic' />
